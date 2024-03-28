@@ -1,8 +1,8 @@
-const svg = d3.select("#chart").append("svg")
-    .attr("width", 600)
-    .attr("height", 800)
-
-
+const width = 600;
+      height = 800;
+const svg = d3.select("#chart")
+    .append("svg")
+    .attr("viewBox", `0 0 ${width} ${height}`)
 
 // Definieren Sie die Projektion
 const projection = d3.geoMercator()
