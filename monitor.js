@@ -3,6 +3,7 @@ const svg = d3.select("#chart").append("svg")
     .attr("height", 800)
 
 
+
 // Definieren Sie die Projektion
 const projection = d3.geoMercator()
     .scale(3000)
@@ -50,9 +51,11 @@ d3.json("./assets/geodata/germany.geojson").then(data => {
                 .transition()
                 .duration(1000)
                 .style("fill", "#133167")
+                .style("stroke", "#222266")
                 .transition()
                 .duration(1000)
                 .style("fill", "#1561AC")
+                .style("stroke", "#222266")
                 .on("end", function() {
                     pulse(d3.select(this));
                 });
