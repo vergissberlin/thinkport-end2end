@@ -33,11 +33,33 @@
                 </p>
             </div>
         </div>
-        <div class="flex flex-col">
-            
+        <div class="flex flex-col" id="kpis">
+            <h2 class="text-xl font-light pt-6">Key Performance Indicators</h2>
+            <div
+                    class="grid grid-cols-1 gap-4 mt-6 md:grid-cols-3 text-slate-400">
+                <div
+                        class="border p-4 rounded-md bg-slate-900 border-slate-700">
+                    <h3 class="text-xl font-bold">Total Orders</h3>
+                    <p class="mt-2 text-3xl font-bold"
+                       id="total-orders">234.230.044
+                    </p>
+                </div>
+                <div class="border p-4 rounded-md bg-slate-900 border-slate-700">
+                    <h3 class="text-xl font-bold">Total Revenue</h3>
+                    <p class="mt-2 text-3xl font-bold"
+                       id="total-revenue">2.032.323 €</p>
+                </div>
+                <div class="border p-4 rounded-md bg-slate-900 border-slate-700">
+                    <h3 class="text-xl font-bold">Average Order Value</h3>
+                    <p class="mt-2 text-3xl font-bold"
+                       id="average-order-value">12,44 €</p>
+                </div>
+            </div>
+
         </div>
-        <div class="border block border-slate-300 dark:border-slate-700 rounded-md p-8 mt-6 bg-slate-900">
-            <div id="chart" class="auto"></div>
+        <div
+                class=" border block border-slate-300 dark:border-slate-700 rounded-md p-8 mt-6 bg-slate-900">
+            <div id="chart" class="mx-auto"></div>
         </div>
     </main>
     <script src="./monitor.js"></script>
