@@ -4,12 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thinkport Business Monitor</title>
+
+    <title>Business Monitor</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body class="text-slate-700 dark:text-slate-100 dark:bg-slate-800">
+    <main class="max-w-screen-lg p-8 mx-auto">
+        <div class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">
+            <div>
+                <h1 class="text-3xl font-bold">Business Monitor POC v1.0.0</h1>
+                <p class="mt-6 text-xl leading-9">
+                   This project is a proof of concept for a business monitor. 
+                    It is a simple web app that uses the D3.js library to display 
+                    a bar chart of the number of orders per day in real time.
+                </p>
+            </div>
+            <div class="hidden shrink-0 lg:block">
+                <img src="public/regenfass.png" alt="Avatar image" loading="lazy" />
+            </div>
+        </div>
+        <div class="border block border-slate-300 dark:border-slate-700 rounded-md p-8 mt-6 bg-slate-900">
+            <div id="chart" class="auto"></div>
+        </div>
+    </main>
     <script src="./monitor.js"></script>
 </body>
-
 </html>
