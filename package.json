@@ -1,0 +1,18 @@
+{
+    "name": "thinkport-end2end",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "./node_modules/.bin/mapshaper -i assets/img/edeka-regionen.svg -o format=geojson assets/geodata/edeka.json",
+        "build:svg": "./node_modules/.bin/svg2geojson assets/img/edeka-regionen.svg -o > assets/geodata/edeka-regionen.geojson",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "mapshaper": "^0.6.76",
+        "svg2geojson": "^0.7.1"
+    }
+}
