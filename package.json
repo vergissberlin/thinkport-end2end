@@ -12,7 +12,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "mapshaper": "^0.6.76",
+        "mapshaper": "^0.7.0",
         "svg2geojson": "^0.7.1"
     }
 }
